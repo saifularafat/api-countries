@@ -16,7 +16,7 @@ const Countries = () => {
             <h3>Available Countries : {countries.length}</h3>
             <div className='all-country'>
                 {
-                    countries.map(country => console.log(country.flags.png))
+                    countries.map(country => console.log(country))
                 }
                 {
                     countries.map(country => <Country
@@ -27,6 +27,7 @@ const Countries = () => {
                         region={country.region}
                         area={country.area}
                         flags = {country.flags.png}
+                        root = {country.idd.root}
                     ></Country>)
                 }
             </div>

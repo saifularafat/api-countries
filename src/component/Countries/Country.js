@@ -15,6 +15,7 @@ const Country = (props) => {
                 <h5>Area: {props.area}</h5>
                 <h3>Region: {props.region}</h3>
                 <h4>Population: {props.population}</h4>
+                <p>Idd: {props.root}</p>
             </div>
     );
 };
