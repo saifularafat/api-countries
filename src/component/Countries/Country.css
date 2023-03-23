@@ -1,0 +1,19 @@
+.all-country{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 20px; */
+    
+}
+
+.country{
+    text-align: center;
+    border: 2px solid rgb(25, 107, 140);
+    border-radius: 12px;
+    margin: 20px 30px;
+    
+  /* border: 2px solid #076185; */
+}
+
+.img{
+    padding: 15px 10px;
+}
