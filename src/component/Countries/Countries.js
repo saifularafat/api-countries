@@ -15,19 +15,14 @@ const Countries = () => {
             <h1>Visiting Every Country of the World!!!</h1>
             <h3>Available Countries : {countries.length}</h3>
             <div className='all-country'>
-                {
+                {/* {
                     countries.map(country => console.log(country))
-                }
+                } */}
                 {
+                    countries.length > 0 && 
                     countries.map(country => <Country
-                        key = {country.cca3}
-                        // country = {country}
-                        name={country.name.common}
-                        population={country.population}
-                        region={country.region}
-                        area={country.area}
-                        flags = {country.flags.png}
-                        root = {country.idd.root}
+                        key = {country.cca3} 
+                        country = {country}
                     ></Country>)
                 }
             </div>
